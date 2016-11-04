@@ -1,17 +1,11 @@
 #include "std_lib_facilities.h"
+#include "calc_constants.h"
 /*GPA-Calculator is a calculator that determines you current Grade point average. 
 It is currently only giving results for RMIT. I've only just started this project but evntually 
 I hope to include grade point average and WAM calculations for every Australian tertiary institution 
 and to provide a GUI for the app for web, PC, and iPhone/Android devices*/ 
 int main()  {
 /**/
-constexpr double unit_val = 12.0;
-constexpr double HD_grade = unit_val * 4.0;
-constexpr double D_grade = unit_val * 3.0;
-constexpr double C_grade = unit_val * 2.0;
-constexpr double P_grade = unit_val;
-constexpr double N_grade = 0.0;
-  
 int HD_num_input = 0;
 int D_num_input = 0;
 int C_num_input = 0;
