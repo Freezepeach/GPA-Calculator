@@ -17,19 +17,19 @@ int N_num_input = 0;
 double GPA = 0;
 int tot_unit_val = 0;
 
-cout << "How many High Distinctions have you attained? \n";
+cout << "How many High Distinctions have you attained so far? \n";
 cin >> HD_num_input;
 
-cout << "How many Distinctions have you attained? \n";
+cout << "How many Distinctions have you attained so far? \n";
 cin >> D_num_input;
 
-cout << "How many Credits have you attained? \n";
+cout << "How many Credits have you attained so far? \n";
 cin >> C_num_input;
 
-cout << "How many Passes have you attained? \n";
+cout << "How many Passes have you attained so far? \n";
 cin >> P_num_input;
 
-cout << "How many Fails have you attained? \n";
+cout << "How many units have you received a fail grade for so far? \n";
 cin >> N_num_input;
 
 tot_unit_val = (HD_num_input + D_num_input + C_num_input + P_num_input + N_num_input) * unit_val;
