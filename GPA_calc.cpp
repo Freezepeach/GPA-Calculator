@@ -11,29 +11,35 @@ int D_num_input = 0;
 int C_num_input = 0;
 int P_num_input = 0;
 int N_num_input = 0;
+String queryHD = "How many High Distinctions have you attained so far? \n";
+String queryD = "How many Distinctions have you attained so far? \n";
+String queryC = "How many Credits have you attained so far? \n";
+String queryP = "How many Passes have you attained so far? \n";
+String queryN = "How many Fail grades have you attained so far? \n";
+String showGPA = "Your progressive GPA is: \n"; 
 
 double GPA = 0;
 int tot_unit_val = 0;
 
-cout << "How many High Distinctions have you attained so far? \n";
+cout << queryHD;
 cin >> HD_num_input;
 
-cout << "How many Distinctions have you attained so far? \n";
+cout << queryD;
 cin >> D_num_input;
 
-cout << "How many Credits have you attained so far? \n";
+cout << queryC;
 cin >> C_num_input;
 
-cout << "How many Passes have you attained so far? \n";
+cout << queryP;
 cin >> P_num_input;
 
-cout << "How many units have you received a fail grade for so far? \n";
+cout << queryN;
 cin >> N_num_input;
 
 tot_unit_val = (HD_num_input + D_num_input + C_num_input + P_num_input + N_num_input) * unit_val;
 
 GPA = (HD_grade * HD_num_input + D_grade * D_num_input + C_grade * C_num_input + P_grade * P_num_input + N_grade * N_num_input)/(tot_unit_val);
 
-cout << "Your progressive GPA is: \n" << GPA << "\n";
+cout << showGPA << GPA << "\n";
 
 }
